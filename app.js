@@ -114,3 +114,72 @@ console.log(firstFruit, fruits);
 // ==========================
 
 // FUNCTIONS - Declare, Invoke
+// example 1-------
+// declare th function: parameters goes in (). logic goes in {}.
+/*
+function hello() {
+    // logic
+    console.log('Hello don');
+    console.log('Hello jenn');
+    console.log('Hello tony');
+};
+
+// invoke (call) the function.
+hello();
+*/
+// ------
+// FUNCTIONS - Parameters, Arguments
+// example 2-------
+/*
+function greet(name) {
+    console.log('Hello there ' + name);
+};
+
+
+// greet don
+greet('don');
+// greet jenn
+greet('jenn');
+// greet tony
+greet('tony');
+*/
+// ------
+
+
+// FUNCTIONS - Return
+// 1 inch = 2.54cm
+/*
+const wallHeight = 80;
+
+function calculate(value){
+   // const newValue = value * 2.54;
+    return value * 2.54;
+    // 
+}
+
+const width = calculate(100);
+const height = calculate(wallHeight);
+
+const dimensions = [width, height];
+console.log(dimensions);
+*/
+// ------
+
+
+// FUNCTIONS - Expressions
+
+// expressions- another way to define a function
+// create a variable, assign to FUNCTIOn (not value), use var
+// diff - hoisting, use - arrow func, libraries
+
+// function definition/declaration
+function addValues(num1, num2) {
+    return num1 + num2;
+}
+
+const firstValue = addValues(3, 4);
+const secondValue = addValues(12, 34);
+// function expression
+
+const values = [firstValue, secondValue];
+console.log(values);
