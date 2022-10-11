@@ -206,7 +206,7 @@ console.log(values);
 6. log all three orders
 7. refactor "calculateTotal" to funtion expression
 
-*/
+
 // Steps 1-3
 function calculateTotal(subTotal, tax)
 // the above refactored:
@@ -225,3 +225,67 @@ const order2 = calculateTotal(50, 5);
 const order3 = calculateTotal(25, 5);
 
 console.log(order1, order2, order3);
+*/
+
+// =========================
+
+// -----   OBEJECTS   ------
+
+// example of an Object: setup
+const person = {
+    name: 'john',
+    lastName: 'peters',
+    age: 40,
+    education: false,
+    married: true,
+    siblings: ['anna','susan','peter'],
+    greeting: function (){  // within the object, this is a method.
+        console.log('Hello my name is John');
+    }
+};
+
+// assign property values to a variable:
+const age = person.age;
+console.log(age);
+
+// change the name property to = bob
+person.name = 'bob';
+
+// in order to access the properties or envoke the methods= calling name: => displays: john
+console.log(person.name);
+// access items in the objects Array:
+console.log(person.siblings[1]);  // displays: susan, because we're calling the 1 index
+// how to run the method in the object:
+person.greeting();
+
+//--------------
+// OBJECT ( CHALLENGE #6 ) VID# 45
+/*
+1. create car object
+2. add make, model, year, colors (array), hybrid (boolean) keys
+3. add two methods (drive and stop)
+4. in the function body setup log with random text
+5. log make
+6. log first color
+7. invoke both methods
+
+*/
+const car = {
+    make: 'lexus',
+    model: 'gs430',
+    year: 2001,
+    color: ['gray','silver','black'],
+    hybrid: false,
+    keys: true,
+    drive: function (){ 
+        console.log('press gas')
+    },
+     stop(){ 
+        console.log('press brake')
+    }
+};
+
+console.log(car.make);
+console.log(car.color[0]);
+car.drive();
+car.stop();
