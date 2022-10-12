@@ -230,7 +230,7 @@ console.log(order1, order2, order3);
 // =========================
 
 // -----   OBEJECTS   ------
-
+/*
 // example of an Object: setup
 const person = {
     name: 'john',
@@ -269,7 +269,7 @@ person.greeting();
 6. log first color
 7. invoke both methods
 
-*/
+
 const car = {
     make: 'lexus',
     model: 'gs430',
@@ -289,3 +289,67 @@ console.log(car.make);
 console.log(car.color[0]);
 car.drive();
 car.stop();
+*/
+
+// ======================
+
+// CONDITIONAL STATEMENTS
+
+// >, <, >=, <=, ==, ===, !=, !===
+
+// if the condition in the () is met, run the code in the {}
+// example:
+/*
+
+if (true) {
+    console.log('hello world');
+}
+
+another example:
+
+if (2>1) {
+    console.log('hello world');
+}
+
+- since 2 is bigger than 1 (a true statement), the code in the {} will run.
+*/
+
+/*
+// example of conditional flow
+
+const value = 2 > 1; // true
+const value2 = 1 > 2; // false
+
+if (value) {
+    console.log('hello world');
+} else {// if not true, run code below
+    console.log('hello people');
+}
+*/
+
+const num1 = 6;
+const num2 = 6;
+const result = num1 >= num2;
+
+const value = true;
+/*
+if (num1 > num2) {
+    console.log('first number is bigger than second');
+} else if (result) {
+    console.log('numbers are equal');
+} else {// if not true, run code below
+    console.log('second number is bigger than first');
+}
+*/
+
+// NOT statement
+
+// if value is 'not true' !value, code will not run, because it is not true. if value = false, then that would make the statement (!value) 'true', so code would run.
+if (!value) {
+    console.log('value is true');
+}
+
+
+
+
+
