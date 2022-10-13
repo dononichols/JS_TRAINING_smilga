@@ -325,13 +325,15 @@ if (value) {
 } else {// if not true, run code below
     console.log('hello people');
 }
-*/
+
 
 const num1 = 6;
 const num2 = 6;
 const result = num1 >= num2;
 
 const value = true;
+*/
+
 /*
 if (num1 > num2) {
     console.log('first number is bigger than second');
@@ -340,7 +342,7 @@ if (num1 > num2) {
 } else {// if not true, run code below
     console.log('second number is bigger than first');
 }
-*/
+
 
 // NOT statement
 
@@ -350,6 +352,126 @@ if (!value) {
 }
 
 
+*/
+
+// ======================
+
+// EQUALITY
+
+// CONDITIONAL STATEMENTS
+// Comparison Operators
+// >, <, >=, <=, ==, ===, !=, !===
+// == checks only value
+// === checks value and type
+/*
+ const num1 = 6;
+ const num2 = 6;
+
+// variables
+const value = num1 == num2; // == means equality
+const value2 = num1 === num2; // === means 
+
+console.log(value);
+console.log(value2);
+
+*/
+// ======================
+
+// LOGICAL OPERATORS
+
+// (|| - OR), (&& - AND), !
+/*
+const name = 'peter';
+const age = 24;
+
+if (name === 'bob'|| age === 24) {   // OR 
+    console.log('hello there user');
+} else {
+    console.log('wrong value');
+}
+*/
+
+// ---------
+
+// --- SWITCH STATEMENTS  ---
+
+// Switch statements are another way to write 'if and else'.
+// dice values : 1-6
+/*
+const dice = 5;
+
+// ---- using 'Switch Statement'
+switch(dice) {
+        case 1:
+        console.log('you got one');
+        break;
+        case 2:
+        console.log('you got two');
+        break;
+        case 3:
+        console.log('you got three');
+        break;
+        default:
+            console.log('you did not roll the dice');
+}
+
+*/
 
 
+// ---  using 'else if' statement
+/*
+if (dice === 1) {
+    console.log('you got one');
+} else if (dice === 2) {
+    console.log('you got two');
+} else  {
+    console.log('roll again');
+}
+*/
 
+// ----- using all 'if' statements...this is'nt the best way to do this. See above for a better way ---
+/*
+if (dice === 1) {
+    console.log('you got one');
+}
+if (dice === 2) {
+    console.log('you got two');
+}
+if (dice < 1 || dice > 6) {
+    console.log('roll again');
+*/
+
+// *******
+
+//--------------
+// CONDITIONALS ( CHALLENGE #7 ) VID# 51
+
+/*
+
+1. create two objects "person1" , "person2"
+2. set name, age (15-25), status ('resident' , 'tourist') keys
+
+3. setup if else, condition where
+   age must be bigger than 18 and status must be equal to 'resident'
+4. test with both objects
+*/
+/*
+// objects using person1 and person2 --
+const person1 = {
+    name: 'susan',
+    age: 25,
+    status: 'resident',   
+};
+
+const person2 = {
+    name: 'bobo',
+    age: 17,
+    status: 'tourist',   
+};
+
+if(person1.age >= 18 && person1.status === 'resident'){
+    console.log('You can vote');
+} else {
+    console.log('Not eligeble to Vote, sorry');
+}
+*/
