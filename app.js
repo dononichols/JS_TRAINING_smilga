@@ -475,3 +475,58 @@ if(person1.age >= 18 && person1.status === 'resident'){
     console.log('Not eligeble to Vote, sorry');
 }
 */
+
+// ===================================
+
+// *****   LOOPS ****** 
+
+// repeatedly run a block of code while the condition is true.
+// // turn off autosave in VS Code- to prevent endless loop crashes
+
+// WHILE LOOPS ---
+/*
+let amount = 10;
+
+while (amount > 0) {
+    console.log('I have ' + amount + " dollars and I'm going to the mall");
+    // create an escape for the loop
+    amount--;
+};
+*/
+
+//------
+
+// DO WHILE LOOPS ---
+
+// write code block first, condition second
+// runs at least once
+/*
+let money = 0;
+
+do{
+    console.log('You have ' + money + ' dollars');
+    money++;
+} while (money < 10);
+*/
+
+// ----------
+
+// FOR LOOPS ---
+
+// example
+/*
+let i;
+for(i = 0; i < 10; i++) {
+    console.log(' and the number is : ' + i);
+}
+
+// ----
+
+for(let number = 11;number >= 0;number--){
+    console.log(' and the number is : ' + number);
+}
+*/
+
+//------
+
+
