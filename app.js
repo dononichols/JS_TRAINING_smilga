@@ -528,5 +528,32 @@ for(let number = 11;number >= 0;number--){
 */
 
 //------
+// ============================================
+// String properties and methods
 
+// wrapper String Object, don't memorize methods
+/*
+let text = ' Peter Jordan';
+
+let result = text.length;
+console.log(result);
+
+// -- PROPERTIES --
+console.log(text.length);
+// -- METHODS --
+console.log(text.toLowerCase());
+console.log(text.toUpperCase());
+console.log(text.charAt(2)); // use this to target a specific index in an Array/String.
+console.log(text.charAt(text.length - 1)); // displays the last index of a string/array
+console.log(text.indexOf('e')); // indexOf will display the index number.(case sensitive)
+console.log(text); // displays the whole string
+console.log(text.trim()); // .trim will trim off any space at the beginning of a string
+//console.log(text.startsWith(' Peter')); // returns a boolean. (case and space sensitive)
+
+// How to chain these methods together...
+console.log(text.trim().toLowerCase().startsWith('peter'));
+console.log(text.includes('eter'));
+console.log(text.slice(0, 2));
+console.log(text.slice(-1)); // to get the index at the end of a string
+*/
 
