@@ -529,7 +529,7 @@ for(let number = 11;number >= 0;number--){
 
 //------
 // ============================================
-// String properties and methods
+// String properties and methods VID.56
 
 // wrapper String Object, don't memorize methods
 /*
@@ -556,4 +556,62 @@ console.log(text.includes('eter'));
 console.log(text.slice(0, 2));
 console.log(text.slice(-1)); // to get the index at the end of a string
 */
+
+// -----------------------
+
+// -- TEMPLATE LITERALS - ES6+ --  VID.57
+
+// backtick characters `` -
+// Interpolation ${} - insert expression(value)
+/*
+// => this is using String concatination
+const name = 'john';
+const age = 25;
+const sentense = "Hey it's " + name + ' and he is ' + age + ' years old';
+console.log(sentense);
+
+// => this is using Template Literals...
+// how to write the above using 'Interpolation' and backticks ``. 
+// you can also do math within the ${}
+const value = `Hey you, it's ${name} and I am ${age} years old. And I was born in ${1977 + 45}`; 
+console.log(value);
+*/
+
+// --------
+
+// STRING ( CHALLANGE #8 ), VID.58
+
+/*
+
+1. create function fullName
+2. accept two parameters "firstName", "lastName"
+3. add them together (concat) and return result in uppercase
+4. invoke fullName and pass some values
+5. log result
+
+6. change the order of arguments
+7. refactor to object parameter
+
+
+
+// function fullName(firstName, lastName){
+//     const fullName = `${firstName} ${lastName}`;
+//     return fullName.toUpperCase();
+// }
+// console.log(fullName('john', 'smith'));
+
+//---
+
+// steps 6 and 7...rewrite so that javascript doesn't recognize the order of the parameters
+function fullName({firstName, lastName}) { // adding {}, turns the parameters into an object
+    const fullName = `${firstName} ${lastName}`;
+    return fullName.toUpperCase();
+}
+
+console.log(fullName({lastName: 'jordan', firstName: 'peter'}));
+
+*/
+//-----------------
+
+
 
