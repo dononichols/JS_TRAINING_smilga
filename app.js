@@ -611,7 +611,47 @@ function fullName({firstName, lastName}) { // adding {}, turns the parameters in
 console.log(fullName({lastName: 'jordan', firstName: 'peter'}));
 
 */
-//-----------------
+//====================
 
+// ARRAY PROPERTIES AND METHODS
+
+let names = ['john','bobo','barry','olga','ben'];
+
+// --- LENGTH
+console.log(names.length);
+// gives the last item in the array. 
+console.log(names[names.length - 1]);
+//
+// --- CONCAT
+const lastNames = ['pepper','onion','banana'];
+// combine two arrays
+const allNames = names.concat(lastNames);
+console.log(allNames);
+
+// -- REVERSE the array using .reverse
+console.log(allNames.reverse());
+
+// --- UNSHIFT - ADDS ITEM to the beginning of the array
+allNames.unshift('susy'); // unshift adds susy to the beginning of the array
+allNames.unshift('mark');
+allNames.unshift('matt'); // ! unshift adds matt to the beginning of the array
+console.log(allNames);
+
+// --- SHIFT - SHIFT REMOVES item from the beginning of the array
+ allNames.shift(); // ! shift removes matt from the beginning of the array
+ console.log(allNames);
+
+// --- PUSH - Adds item to the end of the array
+allNames.push('steve');
+console.log(allNames);
+
+// --- POP - REMOVES items from the end of array
+allNames.pop();
+console.log(allNames);
+
+// SPLICE - (mutates original array)-- (#,#). first number is the index where the splice starts. second number is the number of items removed, including the starting index.
+const specificNames = allNames.splice(3, 2); // targets index 3(onion), and select two values (onion and pepper).
+console.log(specificNames);
+console.log(allNames);
 
 
