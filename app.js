@@ -614,7 +614,7 @@ console.log(fullName({lastName: 'jordan', firstName: 'peter'}));
 //====================
 
 // ARRAY PROPERTIES AND METHODS
-
+/*
 let names = ['john','bobo','barry','olga','ben'];
 
 // --- LENGTH
@@ -653,5 +653,73 @@ console.log(allNames);
 const specificNames = allNames.splice(3, 2); // targets index 3(onion), and select two values (onion and pepper).
 console.log(specificNames);
 console.log(allNames);
+*/
 
+// --------------
+
+// --- ARRAYS AND FOR LOOPS ---- VID.60
+
+// ==== PRACTICE THIS ==== START
+// set up
+/*
+const names = ['anna','susy','bob'];
+const lastName = 'shakeandbake';
+let newArray = [];
+
+// use the for loop to iterate over the array, grab the first name each time, then display it with the last name as a string.
+// need: for keyword
+//--- then three things in (): ---
+//   1.starting point, 
+//   2.how long we'll be iterating or when we will stop, 
+//   3.and how much are we iterating by...by 1, 2...?
+for(let i = 0;i < names.length; i++){
+    console.log(i);
+    console.log(names[i]);
+// add last name
+const fullName = `${names[i]} ${lastName}`
+    newArray.push(fullName);
+}
+
+console.log(names);
+console.log(newArray);
+//
+
+*/
+// -------------------------
+
+// ---EXERCISE - CALCULATE
+// FUNCTIONS, RETURN, IF, ARRAYS, FOR LOOPS --- VID.61
+
+const gas = [20, 40, 100, 30];
+const food = [10, 40, 50];
+
+function calculateTotal(arr){
+    let total = 0;
+    for(let i = 0; i < arr.length; i++){
+        total += arr[i];
+    }
+    if(total > 100){
+        console.log(`You are spending to much!!!`)
+        return total;
+    }
+    console.log(`You got enough money. total is less than 100`)
+    return total;
+}
+
+const gasTotal = calculateTotal(gas);
+const foodTotal = calculateTotal(food);
+const randomTotal = calculateTotal([200, 4000, 500, 1]);
+
+// create an object, to console.log multiple items at once.
+console.log({
+    gas: gasTotal,
+    food: foodTotal,
+    random: randomTotal,
+});
+
+
+
+
+
+// ==== PRACTICE THIS ==== END
 
