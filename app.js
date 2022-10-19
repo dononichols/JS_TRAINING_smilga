@@ -686,7 +686,7 @@ console.log(newArray);
 
 */
 // -------------------------
-
+/*
 // ---EXERCISE - CALCULATE
 // FUNCTIONS, RETURN, IF, ARRAYS, FOR LOOPS --- VID.61
 
@@ -717,9 +717,35 @@ console.log({
     random: randomTotal,
 });
 
-
-
-
-
 // ==== PRACTICE THIS ==== END
+
+*/
+
+// ==================================
+
+// VID.62
+
+// REFERENCE VS VALUe
+// Primitive Data Type
+// String, Number, Symbol, Boolean, Undefined, Null
+// Arrays, Functions, Objects = object
+
+// when assigning primitive data type value to a variable any changes are made directly to that value, without affecting original value
+
+// when assigning non-primitive data type value to a variable is done by reference so any changes will affect all the references.
+
+// --------------------------------------
+
+// VID.63
+
+// NULL and UNDEFINED
+// both represent "no value"
+
+// undefined - "javascript can not find value for this"
+
+// variable without value
+// missing function arguments
+//missing object properties
+
+// null - "developer sets the value"
 
