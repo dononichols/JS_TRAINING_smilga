@@ -750,6 +750,7 @@ console.log({
 // null - "developer sets the value"
 
 // =----------------------------------
+/*
 // VID.64
 
 // Truthy and Falsy
@@ -766,5 +767,35 @@ if (2 > 1) {
     console.log(`Hey This works too!`);
 }
 
-// =----------------------------------
+*/
+
+// =---------------------------------------
 // VID.65
+
+// TERNARY OPERATOR
+
+// unary operator - typeof
+let text = 'some text';
+// console.log(typeof text); // operand
+
+// binary operator - assignment
+let number = 3;
+let number2 = 2 + 5;
+
+// ternary operator
+// condition ? (runs if true) : (runs if false)
+
+const value = 1 < 0;
+
+// ternary operator method...sometimes, you can use a ternary operator instead of using if and else statements
+value ? console.log('value is true') : console.log('value is false');
+
+// traditional method writen be...ternary operator method is above...
+/*
+if (value) {
+    console.log('value is true');
+} else {
+    console.log('value is false');
+}
+
+*/
