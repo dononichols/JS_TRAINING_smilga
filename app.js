@@ -750,6 +750,21 @@ console.log({
 // null - "developer sets the value"
 
 // =----------------------------------
+// VID.64
 
+// Truthy and Falsy
 
+// (all of these are FALSY) "", '', ``, 0, -0, NaN, false, null, undefined
 
+const bool1 = true;
+const bool2 = 2 > 1;
+
+if (true) {
+    console.log(`Hey it works!`);
+}
+if (2 > 1) {
+    console.log(`Hey This works too!`);
+}
+
+// =----------------------------------
+// VID.65
