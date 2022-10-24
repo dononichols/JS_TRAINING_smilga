@@ -837,3 +837,26 @@ if (value) {
 // Higher Order function - accepts another function as an argument or returns another function as a result
 
 // Callback Function - passed to another function as an argument and executed inside that function
+
+//
+
+// --------------------------
+
+// VID.70 - ARRAY ITERATORS - overview
+
+// Powerfull Array Methods
+// forEach, map, filter, find, reduce
+// Iterate over array - no for loop required
+// Accept CALLBACK functions as an argument, calls Callback against each item in an array. Reference Item in the Callback Paramater.
+
+const numbers = [0, 1, 2, 3, 4];
+
+// show all numbers
+ 
+for(let i = 0; i < number.length; i++) {
+    console.log(number[i]);
+}
+
+// ------------------------
+
+
