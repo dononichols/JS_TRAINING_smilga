@@ -809,3 +809,13 @@ if (value) {
 // can be accessed anywhere in the program, and can also be modified
 // Gotchas : name collisions, modify by mistake
 
+// --------------------
+
+// VID. 67 - LOCAL SCOPE
+
+// can not be accessed from outside of code blocks
+// if - NOT VAR
+
+// --------------------
+
+//
