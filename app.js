@@ -813,9 +813,13 @@ if (value) {
 
 // VID. 67 - LOCAL SCOPE
 
-// can not be accessed from outside of code blocks
+// can not be accessed from outside of code blocks {}
 // if - NOT VAR
 
 // --------------------
 
-//
+// VID. 68 - VARIABLE LOOKUP 
+
+// {} - code block
+
+// re-visit this !
