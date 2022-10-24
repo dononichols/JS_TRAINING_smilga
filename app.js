@@ -823,3 +823,17 @@ if (value) {
 // {} - code block
 
 // re-visit this !
+
+// --------------------
+
+// VID. 69
+
+// CALLBACK FUNCTIONS, HIGHER ORDER FUNCTIONS
+
+// Callback Functions, Higher Order Functions, Functions as First Class Objects/First class Citizens
+
+// Functions are first class objects - stored in a variable (expression), passed as an argument to another function, return from the function (closure)
+
+// Higher Order function - accepts another function as an argument or returns another function as a result
+
+// Callback Function - passed to another function as an argument and executed inside that function
