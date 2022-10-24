@@ -848,7 +848,7 @@ if (value) {
 // forEach, map, filter, find, reduce
 // Iterate over array - no for loop required
 // Accept CALLBACK functions as an argument, calls Callback against each item in an array. Reference Item in the Callback Paramater.
-
+/*
 const numbers = [0, 1, 2, 3, 4];
 
 // show all numbers
@@ -856,7 +856,30 @@ const numbers = [0, 1, 2, 3, 4];
 for(let i = 0; i < number.length; i++) {
     console.log(number[i]);
 }
+*/
 
 // ------------------------
+//
+
+// VID.71 - forEach -   Does Not return NEW array
+
+// array name is people, with objecst inside of it
+const people = [
+    {name:'bob', age:20, position: 'developer'},
+    {name:'peter', age:25, position: 'designer'},
+    {name:'susy', age:30, position: 'the boss'}
+];
+
+function showPerson(person){
+    console.log(person.position.toUpperCase());
+}
+
+// one method of iterating through the array
+// people.forEach(showPerson);
+
+// another method of iterating through the array
+people.forEach(function(item){
+    console.log(item.position.toUpperCase());
+});
 
 
