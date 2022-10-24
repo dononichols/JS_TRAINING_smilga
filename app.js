@@ -799,3 +799,13 @@ if (value) {
 }
 
 */
+
+// ---------------------------
+
+// VID. 66 -  GLOBAL SCOPE
+
+// Global Scope vs Local Scope
+// any variable outside code block {} is said to be in Global Scope
+// can be accessed anywhere in the program, and can also be modified
+// Gotchas : name collisions, modify by mistake
+
