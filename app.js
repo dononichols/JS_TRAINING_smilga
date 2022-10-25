@@ -892,7 +892,7 @@ people.forEach(function(item){
 // does return a new array
 // does not change the size of original array
 // uses value from original array when making new one
-
+/*
 const people = [
     {name:'bob', age:20, position: 'developer'},
     {name:'peter', age:25, position: 'designer'},
@@ -916,3 +916,34 @@ const newPeople = people.map(function (people) {
 });
 
 console.log(newPeople);
+
+*/
+// ---------------------------------
+// VID.73
+
+// --- FILTER ----
+
+// Does Return a NEW Array
+// can manipulate the size of the new array
+// returns based on condition
+
+const people = [
+    { name: 'bob', age: 20, position: 'developer'},
+    { name: 'peter', age: 25, position: 'designer'},
+    { name: 'susy', age: 30, position: 'the boss'},
+    { name: 'anna', age: 35, position: 'the boss'},
+];
+
+//example
+// variable... (person) is the parameter
+const youngPeople = people.filter(function (person) {
+    // filter based on this condition
+    return person.age <= 25;
+});
+console.log(youngPeople); // displays two arrays
+// 
+//example
+const developer = people.filter(function(person) {
+    return person.position === 'developer';
+});
+console.log(developer);
