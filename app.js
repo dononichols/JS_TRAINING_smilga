@@ -862,7 +862,7 @@ for(let i = 0; i < number.length; i++) {
 //
 
 // VID.71 - forEach -   Does Not return NEW array
-
+/*
 // array name is people, with objecst inside of it
 const people = [
     {name:'bob', age:20, position: 'developer'},
@@ -881,5 +881,38 @@ function showPerson(person){
 people.forEach(function(item){
     console.log(item.position.toUpperCase());
 });
+*/
 
 
+// ------------------------
+// VID.72
+
+// MAP  -  returns NEW array (cooler than forEach, and more used)
+
+// does return a new array
+// does not change the size of original array
+// uses value from original array when making new one
+
+const people = [
+    {name:'bob', age:20, position: 'developer'},
+    {name:'peter', age:25, position: 'designer'},
+    {name:'susy', age:30, position: 'the boss'},
+];
+
+
+const ages = people.map(function (person) {
+    //console.log(person);
+    //return 'hello world'; // return will display the number of items that's in the original array(people)
+    return person.age + 20; // you can manipulate the result like: return person.age + 20 ==this will add 20 to all the ages.
+
+});
+
+// set up new array that holds objects
+const newPeople = people.map(function (people) {
+    return {
+        firstName: person.name.toUpperCase(),
+        oldAge: person.age + 20,
+    };
+});
+
+console.log(newPeople);
