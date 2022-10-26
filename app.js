@@ -1002,3 +1002,62 @@ const total = people.reduce(function(acc,currItem){
 console.log(total);
 */
 //
+// -----------------------------------
+
+// ## Array Methods - will be used everytime to build an application, even while using frameworks
+
+// --- ARRAY METHODS CHALLENGE #9 ---  ( multiple videos )
+
+// ###  Create Student Array
+/*
+// instructions -
+1. setup students array with 5 students:
+
+    {
+        id: 1,
+        name: 'peter',
+        score: 80,
+        favoriteSubject: 'Math',
+    }
+
+### Use Multiple Files
+
+- easier to manage code base (file, project)
+- order matters
+- other ways to achieve the same result (ES6 modules, fetch DB)
+- not limited to just static data
+
+#### updated Students
+
+1. add role: 'student' property to each object using MAP method
+2. assign to 'updatedStudents' variable and log
+
+#### highScores
+
+1. filter array and return only scores >= 80
+2. assign to 'highScores' variable and log
+
+#### specificID
+
+1. find specific id in array
+2. assign to 'specificId' variable and log
+
+#### averageScore
+
+1. sum up all student.score values with reduce
+2. assign to 'highScores' variable and log
+
+
+
+
+*/
+// console.log(students);
+
+// have access to students from data.js
+// (student) references every object in the array
+const updatedStudents = students.map(function(student){
+    // console.log(student);
+    student.role = 'student';
+    return student;
+});
+console.log(updatedStudents);
