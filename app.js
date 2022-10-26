@@ -1065,7 +1065,7 @@ const updatedStudents = students.map(function(student){
 
 /*
 // -----
-// -- FILTER --
+// -- FILTER -- = returns an array
 const highScores = students.filter(function(student){
     if (student.score >= 80) {
         return student;
@@ -1076,6 +1076,9 @@ console.log(highScores);
 */
 // -----
 // -- FILTER -- alternative syntax
+
+// = the biggest difference between Filter and Find..filter gives the array, Find gives back the object.
+
 /*
 const highScores = students.filter(function(student){
     if (student.score >= 80) return student; // shorter option...one line.
@@ -1085,8 +1088,26 @@ console.log(highScores);
 */
 // -----------------
 // -- FILTER -- alternative syntax
+/*
 const highScores = students.filter(function(student){
      return student.score >= 80; // shorter option...one line.
     
 });
 console.log(highScores);
+*/
+//
+// --------------------------
+
+// -- FIND --- array challenge = returns an object
+
+// = the biggest difference between Filter and Find..filter gives the array, Find gives back the object.
+/*
+const specificId = students.find(function(banana){
+    return banana.id === 1;
+});
+
+console.log(specificId);
+*/
+// ----------------------
+
+//
