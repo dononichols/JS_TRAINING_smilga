@@ -1052,7 +1052,7 @@ console.log(total);
 
 */
 // console.log(students);
-
+ /* ===========
 // have access to students from data.js
 // (student) references every object in the array
 const updatedStudents = students.map(function(student){
@@ -1060,7 +1060,8 @@ const updatedStudents = students.map(function(student){
     student.role = 'student';
     return student;
 });
-
+ ==============
+// */ 
 // console.log(updatedStudents);
 
 /*
@@ -1109,5 +1110,28 @@ const specificId = students.find(function(banana){
 console.log(specificId);
 */
 // ----------------------
+// vid.82
 
-//
+// --- REDUCE ----- #1  // ?????? go back over
+/*
+const specificId = students.find(function(banana){
+    return banana.id === 6;
+});
+
+const fruits = ['banana', 'orange'];
+
+const random = fruits.find(function(fruit){
+    return fruit === 'orange';
+});
+
+// console.log(random);
+// console.log(specificId);
+
+const averageScore = students.reduce(function(scoresTotal, student) {
+    // console.log(student);
+    console.log(scoresTotal);
+    return scoresTotal;
+}, 0)/students.length;
+
+console.log(averageScore);
+*/
