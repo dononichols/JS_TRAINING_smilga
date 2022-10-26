@@ -1064,12 +1064,29 @@ const updatedStudents = students.map(function(student){
 // console.log(updatedStudents);
 
 /*
+// -----
 // -- FILTER --
 const highScores = students.filter(function(student){
     if (student.score >= 80) {
         return student;
     }
 });
+console.log(highScores);
 
+*/
+// -----
+// -- FILTER -- alternative syntax
+/*
+const highScores = students.filter(function(student){
+    if (student.score >= 80) return student; // shorter option...one line.
+    
+});
 console.log(highScores);
 */
+// -----------------
+// -- FILTER -- alternative syntax
+const highScores = students.filter(function(student){
+     return student.score >= 80; // shorter option...one line.
+    
+});
+console.log(highScores);
