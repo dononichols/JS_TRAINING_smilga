@@ -1060,4 +1060,16 @@ const updatedStudents = students.map(function(student){
     student.role = 'student';
     return student;
 });
-console.log(updatedStudents);
+
+// console.log(updatedStudents);
+
+/*
+// -- FILTER --
+const highScores = students.filter(function(student){
+    if (student.score >= 80) {
+        return student;
+    }
+});
+
+console.log(highScores);
+*/
