@@ -1197,3 +1197,92 @@ console.log(survey);
 // unfinished video notes
 
 */
+
+// ---------------------------------------
+// vid.86
+
+// --- MATH OBJECT ----
+
+// Standard built-in objects - always available
+
+// const numberA = 4.56789;
+// const resultA = Math.ceil(8.99999); // rounds up
+
+// const numberA = 4.56789;
+// const resultA = Math.floor(8.99999); // rounds down
+
+// const numberA = 2;
+// const resultA = Math.sqrt(numberA); // square root method
+
+
+// const resultA = Math.PI; // pi
+
+// const resultA = Math.min(4,5,6,7,9); // returns minimum number from items
+
+// const resultA = Math.max(4,5,6,7,9); // returns maximum number from items
+
+// const resultA = Math.random(); // returns number between 0 - 0.99999999
+
+// const resultA = Math.floor(Math.random() * 10); // creates whole number between 0 - 9
+
+// const resultA = Math.ceil(Math.random() * 10); // creates whole number between 1 - 10
+
+// also / or
+
+// const resultA = Math.floor(Math.random() * 10 + 1); // creates whole number between 1 - 10
+// // .....
+// console.log(resultA);
+
+// ---------------------------------------
+// vid.87
+
+// --- DATE OBJECT ---
+/*
+const months = [
+    'January',
+    'Febuare',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+];
+
+const days = [
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday',
+];
+
+// global object is date
+const date = new Date();
+// to set a date
+// const date = new Date('1/12/2004'); this is how you statically dispay a date
+const month = date.getMonth();
+console.log(months[month]);
+
+const day = date.getDay();
+console.log(days[day]);
+
+console.log(date.getDate());
+console.log(date.getFullYear());
+
+// sentense
+
+const sentense = `${days[day]}, ${date.getDate()} ${months[month]} ${date.getFullYear()}`;
+
+console.log(sentense);
+
+document.body.innerHTML = sentense;
+*/
+
+// -------------------------------
