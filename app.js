@@ -1135,3 +1135,28 @@ const averageScore = students.reduce(function(scoresTotal, student) {
 
 console.log(averageScore);
 */
+
+// ------------------------------
+// vid.84
+
+// --- Square Bracket Notation ---
+
+/*
+
+##### survey
+
+1. list favorite subjects with reduce
+    {
+    english: 1
+    history: 1
+    math: 3
+    }
+2. assign to survey and log
+*/
+
+const subject = 'math';
+
+const total = {};
+// total.math = 'some value'
+total[subject] = 'some value'; // [subject] is like using the dot notation, except it's dynamic. 
+console.log(total);
