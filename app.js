@@ -1152,7 +1152,7 @@ console.log(averageScore);
     math: 3
     }
 2. assign to survey and log
-*/
+
 
 const subject = 'math';
 
@@ -1160,3 +1160,40 @@ const total = {};
 // total.math = 'some value'
 total[subject] = 'some value'; // [subject] is like using the dot notation, except it's dynamic. 
 console.log(total);
+
+*/
+
+// ------------------------------
+// vid.85
+
+// --- Array Challenge - REDUCE #2 --- GOT LOST.GO OVER AGAIN ***
+/*
+const averageScore = students.reduce(function(scoresTotal, student) {
+    // console.log(student);
+   // console.log(scoresTotal);
+    return scoresTotal;
+}, 0)/students.length;
+
+// console.log(averageScore);
+
+const subject = 'art';
+
+const total = {};
+total[subject] = 'some value';
+// console.log(total);
+
+const survey = students.reduce(function(survey, student) {
+    //console.log(student.favoriteSubject);
+    const favSubject = student.favoriteSubject;
+    if(survey[favSubject]){
+        survey[favSubject] = 1;
+    }
+    survey[favSubject] = 1;
+    return survey;
+}, {});
+
+console.log(survey);
+
+// unfinished video notes
+
+*/
