@@ -82,7 +82,7 @@ console.log(listItems);
 
 // querySelector('any css'); - selects single
 // querySelectorAll('any css') - selects all
-///*
+/*
 // Query Selector
 const result = document.querySelector('#result');
 result.style.backgroundColor = 'blue';
@@ -99,6 +99,37 @@ list.forEach(function(item){
     console.log(item);
     item.style.color = 'red';
 });
+
+*/
+// ----------------------------------------
+// vid.95
+
+// NAVIGATE THE DOM  -  Children
+
+// Select the element or group of elements that we want
+// Decide the effect we want to apply to the selection
+
+// childNodes - returns all childNodes including whitespace whick is treated as a text node
+
+// children
+// firstChild
+// lastChild
+
+///*
+// target the "result" id, then navigate the li list/ Dom tree
+
+// this selects the id "result"
+const result = document.querySelector('#result');
+
+// this selects the children
+// children
+const children = result.children;
+console.log(children);
+
+// firstChild
+console.log(result.firstChild); //
+// lastChild
+console.log(result.lastChild); //
 
 */
 // ----------------------------------------
