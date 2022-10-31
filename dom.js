@@ -190,6 +190,7 @@ const last = document.querySelector('#last');
 
 // textContent & nodeValue = allow us to access the text content inside of an element
 
+/*
 // nodeValue & textContent
 const item = document.getElementById('special');
 const value = item.firstChild.nodeValue;
@@ -197,8 +198,32 @@ const easyValue = item.textContent;
 
 console.log(easyValue);
 
+*/
 // -----------------------------------------
+// v.100
 
+// getAttribute()  setAttribute()
+
+const first = document.querySelector('.first');
+const idValue = first.getAttribute('id');
+// console.log(idValue);
+
+const link = document.getElementById('link');
+const showLink = link.getAttribute('href');
+console.log(showLink);
+
+// dynamically set the attribute
+const last = link.nextElementSibling;
+last.setAttribute('class','first');
+last.textContent = 'i also have a class of first';
+console.log(last);
+
+
+
+const links = document.querySelectorAll('.first');
+console.log(links);
+
+// -----------------------------------------
 
 
 
