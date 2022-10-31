@@ -156,7 +156,7 @@ parent.style.color = 'red';
 // nextSibling, previousSibling
 // return whitespace
 
-
+/*
 const first = document.querySelector('.first'); 
 // console.log(first);
 // const second = first.nextSibling;
@@ -168,4 +168,20 @@ const last = document.querySelector('#last');
 const third = last.previousSibling.previousSibling;
 console.log(third);
 
+*/
 // ----------------------------------------
+// vid.98
+
+// Navigate the DOM -
+
+// nextElementSigling
+// previousElementSibling
+
+/*
+const first = document.querySelector('.first'); 
+first.nextElementSibling.style.color = 'red';
+const last = document.querySelector('#last');
+*/
+
+// -----------------------------------------
+//
