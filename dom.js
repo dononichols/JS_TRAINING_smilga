@@ -184,4 +184,29 @@ const last = document.querySelector('#last');
 */
 
 // -----------------------------------------
-//
+//vid.99
+
+// TEXT CONTENT & NODE VALUE
+
+// textContent & nodeValue = allow us to access the text content inside of an element
+
+// nodeValue & textContent
+const item = document.getElementById('special');
+const value = item.firstChild.nodeValue;
+const easyValue = item.textContent;
+
+console.log(easyValue);
+
+// -----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
