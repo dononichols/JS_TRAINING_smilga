@@ -115,7 +115,7 @@ list.forEach(function(item){
 // firstChild
 // lastChild
 
-///*
+/*
 // target the "result" id, then navigate the li list/ Dom tree
 
 // this selects the id "result"
@@ -132,4 +132,18 @@ console.log(result.firstChild); //
 console.log(result.lastChild); //
 
 */
+// ----------------------------------------
+// vid.96
+
+// NAVIGATE THE DOM - Parent Element
+
+const heading = document.querySelector('h2');
+// console.log(heading.parentElement); // target one parent element
+
+// console.log(heading.parentElement.parentElement.parentElement); //chaining to navigate the tree
+
+// because the style is added to the parent and not the element, everything added within that parent will recieve that style.
+const parent = heading.parentElement;
+parent.style.color = 'red';
+
 // ----------------------------------------
