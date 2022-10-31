@@ -204,6 +204,7 @@ console.log(easyValue);
 
 // getAttribute()  setAttribute()
 
+/*
 const first = document.querySelector('.first');
 const idValue = first.getAttribute('id');
 // console.log(idValue);
@@ -223,9 +224,42 @@ console.log(last);
 const links = document.querySelectorAll('.first');
 console.log(links);
 
+*/
 // -----------------------------------------
+// vid.101
+
+// classList and className
+
+//
+
+const first = document.getElementById('first');
+const second = document.getElementById('second');
+const third = document.getElementById('third');
+//
+//const classValue = first.className;
+// console.log(classValue); // displays the class name
+//
+second.className = 'colors text'; // this method dynamically adds the colors class to the second. className only allows you to add one class at a time...the last class. if you want to add more than one class to a row, use the classList.
+//
+// third.classList.add('colors'); // adds colors class to the third element
+
+//to add multiple classes
+third.classList.add('text', 'colors');// add class
+third.classList.remove('colors');// remove class
+
+// ***
+let result = third.classList.contains('colors');
+if(result){
+    console.log('hell0 world');
+} else {
+    console.log('missing color class')
+}
 
 
+const classValue = third.classList;
+console.log(classValue);
+
+// -----------------------------------------
 
 
 
