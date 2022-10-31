@@ -137,6 +137,7 @@ console.log(result.lastChild); //
 
 // NAVIGATE THE DOM - Parent Element
 
+/*
 const heading = document.querySelector('h2');
 // console.log(heading.parentElement); // target one parent element
 
@@ -145,5 +146,26 @@ const heading = document.querySelector('h2');
 // because the style is added to the parent and not the element, everything added within that parent will recieve that style.
 const parent = heading.parentElement;
 parent.style.color = 'red';
+
+*/
+// ----------------------------------------
+//vid.97
+
+// Navigate the DOM - 
+
+// nextSibling, previousSibling
+// return whitespace
+
+
+const first = document.querySelector('.first'); 
+// console.log(first);
+// const second = first.nextSibling;
+//console.log(second); // displays the white space...text
+const second = first.nextSibling.nextSibling.style.color = 'red';
+console.log(second);
+
+const last = document.querySelector('#last');
+const third = last.previousSibling.previousSibling;
+console.log(third);
 
 // ----------------------------------------
