@@ -65,9 +65,40 @@ console.log(betterItems);
 // getElementByClassName('classname');
 
 // HTMLCollection
+/*
 
 const listItems = document.getElementsByClassName('special');
 listItems[2].style.color = 'blue'; // how to target an item
 console.log(listItems);
+*/
 
+// ----------------------------------------
+//vid.94
+
+// QUERY SELECTOR and QUERY SELECTOR ALL
+
+// Select the element or group of elements that we want
+// Decide the effect we want to apply to the selection
+
+// querySelector('any css'); - selects single
+// querySelectorAll('any css') - selects all
+///*
+// Query Selector
+const result = document.querySelector('#result');
+result.style.backgroundColor = 'blue';
+
+// to target last specific item using querySelectro
+const lastItem = document.querySelector('li:last-child'); //tomato is the last item
+// console.log(lastItem); 
+
+// Query Selector All
+const list = document.querySelectorAll('.special');
+// console.log(list);
+
+list.forEach(function(item){
+    console.log(item);
+    item.style.color = 'red';
+});
+
+*/
 // ----------------------------------------
