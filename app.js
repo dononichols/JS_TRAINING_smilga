@@ -1,4 +1,5 @@
-// ----------------
+
+
 // HELPER METHODS
 // 
 // document.write('hello world');
@@ -775,7 +776,7 @@ if (2 > 1) {
 // TERNARY OPERATOR
 
 // unary operator - typeof
-let text = 'some text';
+// let text = 'some text';
 // console.log(typeof text); // operand
 
 // binary operator - assignment

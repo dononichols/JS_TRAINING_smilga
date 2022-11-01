@@ -231,7 +231,7 @@ console.log(links);
 // classList and className
 
 //
-
+/*
 const first = document.getElementById('first');
 const second = document.getElementById('second');
 const third = document.getElementById('third');
@@ -259,8 +259,37 @@ if(result){
 const classValue = third.classList;
 console.log(classValue);
 
+*/
 // -----------------------------------------
+// vid.102
 
+// createElement ('element')
+// createTextNode ('text content')
+// appendChild ('childElement')
+
+// add elements dynamically
+
+// select "result"
+const result = document.querySelector('#result');
+// create an empty element
+const bodyDiv = document.createElement('div');
+// create text node
+const text = document.createTextNode('a simple body div');
+bodyDiv.appendChild(text);
+document.body.appendChild(bodyDiv);
+//
+
+const heading = document.createElement('h2');
+const headingText = document.createTextNode('dynamic heading');
+heading.appendChild(headingText);
+heading.classList.add('blue');
+
+result.appendChild(heading);
+
+
+console.log(result.children);
+
+// ---------------------------------------
 
 
 
