@@ -325,7 +325,7 @@ console.log(result.children);
 
 // replaceChild('new', 'old'); ...takes two arguments: the 'new' element we'll be adding. and the 'old' element. the element we'll be replacing with the new element.
 
-///*
+/*
 // select "result"
 const result = document.querySelector('#result');
 const first = document.querySelector('red');
@@ -356,9 +356,20 @@ console.log(result.children);
 
 */
 // ----------------------------------
+//vid.105
+
+// --- prepend and innerText ---
+
+// prepend
+
+// innerText
+
+// insert a 'h2' in front of the 'first heading'
+// first, create a new element
+const heading = document.createElement('h2');
+heading.innerText = `i am a dynamic heading`; // innerText
+document.body.prepend(heading); // innerText
 
 
-
-
-
+// -----------------------------------
 
