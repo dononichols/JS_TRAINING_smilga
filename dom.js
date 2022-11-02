@@ -393,7 +393,7 @@ console.log(heading);
 
 // innerHTML
 // textContent
-
+/*
 const list = document.getElementById('first');
 const div = document.getElementById('second');
 const item = document.querySelector('.item');
@@ -408,3 +408,19 @@ ul.innerHTML = ` <li class="item">list item</li>
 <li>list item</li>`; // gives ul a container to hold the html
 // append
 document.body.appendChild(ul);
+
+*/
+// ------------------------------------
+// vid.108
+
+// Change CSS with style property
+
+const random = document.querySelector('.random');
+// console.log(random.style); // displays a list of CSS styles that you can manipulate. HOWEVER, the downside to this method is that you are adding properties One by One.
+// requires to many lines
+// random.style.backgroundColor = 'blue';
+// random.style.color = 'white';
+// random.style.fontSize = '3rem';
+// random.style.textTransform = 'capitalize';
+
+random.classList.add('title'); // using this method, we'r able to add all styles at once
