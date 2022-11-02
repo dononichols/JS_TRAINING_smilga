@@ -379,7 +379,7 @@ document.body.prepend(heading); // innerText
 // removeChild
 
 // remove elements from the DOM
-
+/*
 const result = document.querySelector('#result');
 // result.remove(); // remove...
 
@@ -387,4 +387,24 @@ const heading = result.querySelector('h1');
 result.removeChild(heading);
 console.log(heading);
 
+*/
+// -------------------------------
+// vid.107
 
+// innerHTML
+// textContent
+
+const list = document.getElementById('first');
+const div = document.getElementById('second');
+const item = document.querySelector('.item');
+
+console.log(div.textContent); // displays the text content in the div // returns text in that element
+
+console.log(list.innerHTML); // innerHTML returns all the html within that element.. in this case, the list element
+
+// create another list
+const ul = document.createElement('ul'); // creates an element of ul
+ul.innerHTML = ` <li class="item">list item</li>
+<li>list item</li>`; // gives ul a container to hold the html
+// append
+document.body.appendChild(ul);
