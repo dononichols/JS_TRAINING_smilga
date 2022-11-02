@@ -296,7 +296,7 @@ console.log(result.children);
 // insertBefore('element','location' );
 
 // insertBefore requires two arguments: the 'element' and the 'location'...meaning: before which element, would you like to insert your dynamic element?
-
+/*
 // select "result"
 const result = document.querySelector('#result');
 const first = document.querySelector('red');
@@ -317,10 +317,45 @@ result.insertBefore(heading, first);
 
 console.log(result.children);
 
+*/
+// ---------------------------------
+// vid.104
 
+// --- replaceChild -----
 
+// replaceChild('new', 'old'); ...takes two arguments: the 'new' element we'll be adding. and the 'old' element. the element we'll be replacing with the new element.
 
+///*
+// select "result"
+const result = document.querySelector('#result');
+const first = document.querySelector('red');
+// create an empty element
+const bodyDiv = document.createElement('div');
+// create text node
+const text = document.createTextNode('a simple body div');
+bodyDiv.appendChild(text);
+document.body.insertBefore(bodyDiv, result); // adds in body, before the result
+//
 
+const heading = document.createElement('h2');
+const headingText = document.createTextNode('dynamic heading');
+heading.appendChild(headingText);
+heading.classList.add('blue');
+
+result.insertBefore(heading, first);
+
+// create h6 element, place text in it, add a class of 'red' to it, add smallText to smallHeading,
+const smallHeading = document.createElement('h6');
+const smallText = document.createTextNode(`i'm a small heading text. `);
+smallHeading.classList.add('red')
+// add smallText to smallHeading
+smallHeading.appendChild(smallText);
+document.body.replaceChild(smallHeading,bodyDiv); // replaced original bodyDiv with smallHeading
+
+console.log(result.children);
+
+*/
+// ----------------------------------
 
 
 
