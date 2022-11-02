@@ -364,12 +364,27 @@ console.log(result.children);
 
 // innerText
 
+/*
 // insert a 'h2' in front of the 'first heading'
 // first, create a new element
 const heading = document.createElement('h2');
 heading.innerText = `i am a dynamic heading`; // innerText
 document.body.prepend(heading); // innerText
 
-
+*/
 // -----------------------------------
+// vid. 106
+
+// remove
+// removeChild
+
+// remove elements from the DOM
+
+const result = document.querySelector('#result');
+// result.remove(); // remove...
+
+const heading = result.querySelector('h1');
+result.removeChild(heading);
+console.log(heading);
+
 
