@@ -268,14 +268,14 @@ console.log(classValue);
 // appendChild ('childElement')
 
 // add elements dynamically
-
+/*
 // select "result"
 const result = document.querySelector('#result');
 // create an empty element
 const bodyDiv = document.createElement('div');
 // create text node
 const text = document.createTextNode('a simple body div');
-bodyDiv.appendChild(text);
+bodyDiv.appendChild(/text);
 document.body.appendChild(bodyDiv);
 //
 
@@ -289,7 +289,36 @@ result.appendChild(heading);
 
 console.log(result.children);
 
+*/
 // ---------------------------------------
+// vid.103
+ 
+// insertBefore('element','location' );
+
+// insertBefore requires two arguments: the 'element' and the 'location'...meaning: before which element, would you like to insert your dynamic element?
+
+// select "result"
+const result = document.querySelector('#result');
+const first = document.querySelector('red');
+// create an empty element
+const bodyDiv = document.createElement('div');
+// create text node
+const text = document.createTextNode('a simple body div');
+bodyDiv.appendChild(text);
+document.body.insertBefore(bodyDiv, result); // adds in body, before the result
+//
+
+const heading = document.createElement('h2');
+const headingText = document.createTextNode('dynamic heading');
+heading.appendChild(headingText);
+heading.classList.add('blue');
+
+result.insertBefore(heading, first);
+
+console.log(result.children);
+
+
+
 
 
 
