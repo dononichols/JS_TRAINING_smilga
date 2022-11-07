@@ -414,7 +414,7 @@ document.body.appendChild(ul);
 // vid.108
 
 // Change CSS with style property
-
+/*
 const random = document.querySelector('.random');
 // console.log(random.style); // displays a list of CSS styles that you can manipulate. HOWEVER, the downside to this method is that you are adding properties One by One.
 // requires to many lines
@@ -424,3 +424,25 @@ const random = document.querySelector('.random');
 // random.style.textTransform = 'capitalize';
 
 random.classList.add('title'); // using this method, we'r able to add all styles at once
+
+*/
+// ---------------------------------
+// vid.110
+
+// --- Click Events ----
+
+// 3 core principles
+
+// select element
+// addEventListener()
+// what event, what to do
+
+// select the button
+const btn = document.querySelector('.btn');
+const heading = document.querySelector('h2');
+
+btn.addEventListener('click',function(){
+    heading.classList.add('red');
+})
+
+// ---------------------------------
