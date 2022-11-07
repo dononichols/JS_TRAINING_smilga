@@ -451,6 +451,7 @@ btn.addEventListener('click',function(){
 
 // Function Reference
 
+/*
 const btn = document.querySelector('.btn');
 const heading = document.querySelector('h2');
 
@@ -468,4 +469,47 @@ function changeColors() {
 
 btn.addEventListener('click', changeColors);
 
+*/
 // ---------------------------------
+// vid.112
+
+// Mouse Events
+
+// click - fires after full action occurs
+// mousedown - button is pressed
+// mouseup - button is released
+// mouseenter - move onto an element
+// mouseleave - move out of an element
+///*
+
+// select the h1 and the button
+const heading = document.querySelector('h1');
+const btn = document.querySelector('.btn');
+
+//
+btn.addEventListener('click', function(){
+    console.log('you CLICKED me');
+});
+
+//
+btn.addEventListener('mousedown', function(){
+    console.log('DOWN !!!');
+});
+
+//
+btn.addEventListener('mouseup', function(){
+    console.log('UP !!!!');
+});
+
+// --
+// type of hover 
+heading.addEventListener('mouseenter', function(){
+    heading.classList.add('blue');
+});
+//
+heading.addEventListener('mouseleave', function(){
+    heading.classList.remove('blue');
+});
+
+*/
+//--------------------------------------------
