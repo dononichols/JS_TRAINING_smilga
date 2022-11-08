@@ -480,7 +480,7 @@ btn.addEventListener('click', changeColors);
 // mouseup - button is released
 // mouseenter - move onto an element
 // mouseleave - move out of an element
-///*
+/*
 
 // select the h1 and the button
 const heading = document.querySelector('h1');
@@ -513,3 +513,31 @@ heading.addEventListener('mouseleave', function(){
 
 */
 //--------------------------------------------
+// vid.113
+
+// KEY EVENTS
+
+// keypress - when key is pressed
+// keydown - when key is down
+// keyup - when key is released
+
+const nameInput = document.getElementById('name');
+
+//key Press - when key is pressed
+nameInput.addEventListener('keypress', function(){
+    console.log('you pressed a key');
+});
+
+/*
+//key Down - when key is pressed down
+nameInput.addEventListener('keydown', function(){
+    console.log('you pressed a key');
+});
+
+//key Up - when key is released
+nameInput.addEventListener('keyup', function(){
+    console.log('you pressed a key');
+});
+*/
+// -----------------------------------
+//
