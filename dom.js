@@ -520,7 +520,7 @@ heading.addEventListener('mouseleave', function(){
 // keypress - when key is pressed
 // keydown - when key is down
 // keyup - when key is released
-
+/*
 const nameInput = document.getElementById('name');
 
 //key Press - when key is pressed
@@ -528,7 +528,7 @@ nameInput.addEventListener('keypress', function(){
     console.log('you pressed a key');
 });
 
-/*
+
 //key Down - when key is pressed down
 nameInput.addEventListener('keydown', function(){
     console.log('you pressed a key');
@@ -539,5 +539,41 @@ nameInput.addEventListener('keyup', function(){
     console.log('you pressed a key');
 });
 */
+
 // -----------------------------------
-//
+//v.114
+
+// --- Event Object ---
+
+// event object argument e, evt
+// info about triggered event
+// event.type
+// event.currentTartget
+// this keyword ...try not to use this, until u have more expreience
+// preventDefault() - prevents default behaviour
+
+
+// select the h1 and btn, and created a variable
+const heading = document.querySelector('h1');
+const btn = document.querySelector('.btn');
+const link = document.getElementById('link');
+
+// add an eventListener to listen for the click
+/*
+heading.addEventListener('click',function(event){
+    console.log(event.currentTarget);
+});
+*/
+
+btn.addEventListener('click',function(event){
+    event.currentTarget.classList.add('blue'); // didnt display blue ?
+    console.log(event.type);
+});
+
+function someFunc(e){
+    e.preventDefault(); // the default action is, when you click the link, it scrolls to the top of page. 'preventDefault' prevents that from occuring.
+}
+
+link.addEventListener('click', someFunc); // ?
+
+// ---------------------------------------
