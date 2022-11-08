@@ -554,9 +554,9 @@ nameInput.addEventListener('keyup', function(){
 
 
 // select the h1 and btn, and created a variable
-const heading = document.querySelector('h1');
-const btn = document.querySelector('.btn');
-const link = document.getElementById('link');
+// const heading = document.querySelector('h1');
+// const btn = document.querySelector('.btn');
+// const link = document.getElementById('link');
 
 // add an eventListener to listen for the click
 /*
@@ -564,7 +564,7 @@ heading.addEventListener('click',function(event){
     console.log(event.currentTarget);
 });
 */
-
+/*
 btn.addEventListener('click',function(event){
     event.currentTarget.classList.add('blue'); // didnt display blue ?
     console.log(event.type);
@@ -576,4 +576,32 @@ function someFunc(e){
 
 link.addEventListener('click', someFunc); // ?
 
+*/
 // ---------------------------------------
+//vid.115
+
+// --- CurrnetTarget vs. Target --- (these are event objects)
+
+// currentTarget - always refers to the element to which the event handler has been attached to
+
+// target - indentifies the element on which the event occured
+
+// select all the buttons
+const btns = document.querySelectorAll('.btn');
+
+// add a green color to whatever button we click on
+btns.forEach(function(btn){
+    btn.addEventListener('click',function(e){
+
+        // console.log(e.currentTarget); // currentTarget
+        // e.currentTarget.style.color = 'green';
+
+        console.log('target',e.target);
+        console.log('currentTarget',e.currentTarget); // targets the specific element clicked, not just all the items in the elements. used to target nested elements
+        e.target.style.color = 'yellow';
+    });
+});
+
+// ---------------------------------------
+
+
