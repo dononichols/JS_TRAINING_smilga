@@ -647,7 +647,7 @@ list.addEventListener('click', showBubbling);
 // ** allows select dynamic elements **
 // event propogation - order the events are fired
 // event bubbling - clicked element first then bubbles up-default
-
+/*
 // selecting...
 const container = document.querySelector('.container');
 const btn = document.querySelector('.btn');
@@ -673,3 +673,28 @@ container.addEventListener('click',function(e){
 })
 
 // heading.addEventListener('click', sayHello);
+
+*/
+// --------------------------------------
+//vid. 118
+
+// --- FORMS ---
+
+// submit event listener
+// prevent default
+// how to get a value
+
+const form = document.getElementById('form');
+const name = document.getElementById('name');
+const submit = document.getElementById('submit');
+const password = document.getElementById('password');
+
+form.addEventListener('submit', function(e){
+    e.preventDefault(); // prevents form from trying to send output to the server, whick causes it not to be stored in the console log.
+    console.log('form submitted');
+    //
+    console.log(name.value);
+    console.log(password.value);
+});
+
+// --------------------------------------
