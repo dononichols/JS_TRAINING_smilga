@@ -585,7 +585,7 @@ link.addEventListener('click', someFunc); // ?
 // currentTarget - always refers to the element to which the event handler has been attached to
 
 // target - indentifies the element on which the event occured
-
+/*
 // select all the buttons
 const btns = document.querySelectorAll('.btn');
 
@@ -602,6 +602,40 @@ btns.forEach(function(btn){
     });
 });
 
+*/
 // ---------------------------------------
+//vid.116
+
+// --- Event Propagation - Bubbling - Capturing ---
+
+// ** allows select dynamic elements **
+// event propogation - order the events are fired
+// event bubbling - clicked element first then bubbles up-default
+// event capturing - fires at the root and fires until reaches target
+
+const container = document.querySelector('.container');
+const list = document.querySelector('.list-items');
+
+function showBubbling(e){
+    console.log('current target', e.currentTarget);
+    console.log('target', e.target);
+
+    if(e.target.classList.contains('link')){
+        console.log('this is a linnk');
+    }
+};
+
+function stopPropagation(e) {
+    console.log('you clicked on list');
+
+    e.stopPropagation();
+}
 
 
+list.addEventListener('click', showBubbling);
+// other examples:
+// container.addEventListener('click', showBubbling);
+// document.addEventListener('click', showBubbling);
+// window.addEventListener('click', showBubbling);
+
+// ------------------------------------
