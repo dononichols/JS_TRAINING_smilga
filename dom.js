@@ -683,7 +683,7 @@ container.addEventListener('click',function(e){
 // submit event listener
 // prevent default
 // how to get a value
-
+/*
 const form = document.getElementById('form');
 const name = document.getElementById('name');
 const submit = document.getElementById('submit');
@@ -696,5 +696,32 @@ form.addEventListener('submit', function(e){
     console.log(name.value);
     console.log(password.value);
 });
+
+*/
+// --------------------------------------
+//vid.119
+
+// Local Storage
+
+// Web Storage API - provided by browser
+// session storage, local storage
+// setItem - getItem - removeItem - clear
+
+// localStorage.setItem('name', 'john');
+// sessionStorage.setItem('name', 'john');
+
+localStorage.setItem('name', 'john');
+localStorage.setItem('friend', 'peter');
+localStorage.setItem('job', 'developer');
+localStorage.setItem('address', 'street 123');
+
+const  name = localStorage.getItem('name');
+console.log(name);
+
+// to remove item-removes the key 'name'
+localStorage.removeItem('name');
+
+// clear the local storage
+localStorage.clear();
 
 // --------------------------------------
