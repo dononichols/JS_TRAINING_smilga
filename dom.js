@@ -612,7 +612,7 @@ btns.forEach(function(btn){
 // event propogation - order the events are fired
 // event bubbling - clicked element first then bubbles up-default
 // event capturing - fires at the root and fires until reaches target
-
+/*
 const container = document.querySelector('.container');
 const list = document.querySelector('.list-items');
 
@@ -638,4 +638,38 @@ list.addEventListener('click', showBubbling);
 // document.addEventListener('click', showBubbling);
 // window.addEventListener('click', showBubbling);
 
+*/
 // ------------------------------------
+//vid.117
+
+// -- Event Propagation Example --
+
+// ** allows select dynamic elements **
+// event propogation - order the events are fired
+// event bubbling - clicked element first then bubbles up-default
+
+// selecting...
+const container = document.querySelector('.container');
+const btn = document.querySelector('.btn');
+//const heading = document.querySelector('.heading');
+
+function sayHello(){
+    console.log('hello there!');
+}
+
+//add heading dynamically
+btn.addEventListener('click',function(){
+    const element = document.createElement('h1');
+    element.classList.add('heading');
+    element.textContent = `i'm inside of the container`;
+    container.appendChild(element);
+});
+
+// set up function for the container
+container.addEventListener('click',function(e){
+    if(event.target.classList.contains('heading')) {
+        console.log('hello there?');
+    }
+})
+
+// heading.addEventListener('click', sayHello);
