@@ -709,7 +709,7 @@ form.addEventListener('submit', function(e){
 
 // localStorage.setItem('name', 'john');
 // sessionStorage.setItem('name', 'john');
-
+/*
 localStorage.setItem('name', 'john');
 localStorage.setItem('friend', 'peter');
 localStorage.setItem('job', 'developer');
@@ -723,5 +723,40 @@ localStorage.removeItem('name');
 
 // clear the local storage
 localStorage.clear();
+
+*/
+// --------------------------------------
+//vid.120
+
+// -- Local Storage with Multiple Values --
+
+// JSON.stringify(), JSON.parse() --use these when storing anything more complex than a string in order to maintain the data structure
+
+const friends = ['john','peter','bob'];
+
+localStorage.setItem('friends', JSON.stringify(friends));
+
+const Values = JSON.parse(localStorage.getItem('friends'));
+console.log(Values[0]);
+
+//
+
+// how to check if value is already in local storage. if it is, we will sign it, if it's not, then we'll have an empty array
+
+let fruits;
+
+if(localStorage.getItem('fruits')){
+
+    fruits = JSON.parse(localStorage.getItem('fruits'));
+}
+else{
+    fruits = [];
+};
+
+console.log(fruits);
+// add value to fruits[]
+fruits.push('apple');
+// push fruits array[] to local storage
+localStorage.setItem('fruits',JSON.stringify(fruits));
 
 // --------------------------------------
