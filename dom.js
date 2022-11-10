@@ -898,10 +898,43 @@ document
 scrollY - returns the number of pixels the document is currently scrolled along the vertical axis (pageYOffset)
 
 scrollX - returns the number of pixels scrolled along the horizontal axis (pageXOffset)
+//
 */
-
+/*
 // this needs the image from the previous (vid.124) section to work
 window.addEventListener('scroll', function () {
     console.log(window.screenY + 'px');
     console.log(window.screenX + 'px');
 });
+
+*/
+// -------------------------------
+//vid.126
+
+// --- Width 
+// --- Height
+// --- GetBoundingClientRect
+
+/*
+
+* innerWidth - The read-only Window property the interior width of the window in pixels
+
+* innerHeight - The read-only property of the Window interface returns the interior height of the window in pixels
+
+The Element.getBoundingClientRect() method returns a DOMRect object providing information about the size of an element and its position relative to the viewport.
+
+*/
+
+// this will give the height and width of the view port
+// console.log('height : ' + window.innerHeight);
+// console.log('height : ' + window.innerWidth);
+
+const btn = document.querySelector('.btn');
+const box = document.querySelector('.box');
+
+btn.addEventListener('click', function(){
+    const Values = box.getBoundingClientRect();
+    console.log(Values);
+})
+
+// -------------------------------
