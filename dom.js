@@ -928,7 +928,7 @@ The Element.getBoundingClientRect() method returns a DOMRect object providing in
 // this will give the height and width of the view port
 // console.log('height : ' + window.innerHeight);
 // console.log('height : ' + window.innerWidth);
-
+/*
 const btn = document.querySelector('.btn');
 const box = document.querySelector('.box');
 
@@ -936,5 +936,21 @@ btn.addEventListener('click', function(){
     const Values = box.getBoundingClientRect();
     console.log(Values);
 })
+
+*/
+// -------------------------------
+//vid.127
+
+// --- Event - "resize"
+
+/*
+
+The resize event fires when the document view (window) has been resized
+
+*/
+
+window.addEventListener('resize', function() {
+    console.log(window.innerWidth);
+}); // this will give the reading of the width everytime the window is resized.
 
 // -------------------------------
