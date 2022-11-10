@@ -773,7 +773,7 @@ localStorage.setItem('fruits',JSON.stringify(fruits));
 // - returns unique identifier
 // - clearTimeout to cancel
 // - on window object
-
+/*
 function sayHello() {
     console.log('hello john');
 }
@@ -806,5 +806,36 @@ console.log(secondID);
 
 // stops the firstID from running
 clearTimeout(firstID);
+
+*/
+// --------------------------------------
+//vid.122
+
+// --- setInterval ---
+
+// setInterval -runs function repeatedly, at specific intervals
+/*
+
+- pass function reference
+- duration in ms (1000 ms = 1 second)
+- default 0, will cover more extensively in async/await section
+- returns unique indentifier
+- clearInterval to cancel
+
+*/
+
+function showScore(name, score) {
+    console.log(`hi ${name}, your score is ${score}`);
+};
+
+// setInterval(showScore, 2000);
+
+// setInterval(showScore,2000, 'bobo', 45);
+
+const firstID = setInterval(showScore,2000, 'bobo', 45);
+const secondID = setInterval(showScore,3000, 'susan', 88);
+
+// to clear and stop firstID from running
+clearInterval(firstID);
 
 // --------------------------------------
