@@ -731,7 +731,7 @@ localStorage.clear();
 // -- Local Storage with Multiple Values --
 
 // JSON.stringify(), JSON.parse() --use these when storing anything more complex than a string in order to maintain the data structure
-
+/*
 const friends = ['john','peter','bob'];
 
 localStorage.setItem('friends', JSON.stringify(friends));
@@ -758,5 +758,53 @@ console.log(fruits);
 fruits.push('apple');
 // push fruits array[] to local storage
 localStorage.setItem('fruits',JSON.stringify(fruits));
+
+*/
+// --------------------------------------
+//vid.121
+
+// --- setTimeout ---
+
+// setTimeout - runs functions once, after specific time
+
+// - pass function reference
+// - duration in ms (1000 ms = 1 second)
+// - default 0, will cover more extensively in async/await section
+// - returns unique identifier
+// - clearTimeout to cancel
+// - on window object
+
+function sayHello() {
+    console.log('hello john');
+}
+
+// sayHello is the reference, and 1000 is the delay time.
+setTimeout(sayHello,3000);
+
+// this method of invoking the function() will not work
+// setTimeout(sayHello(),3000);
+
+// alternative approach...use this
+// ES6 arrow functions
+
+// setTimeout(function(){
+//     console.log('hellow Don');
+// }, 5000); 
+   
+//pass arguments
+function showScore(name,score){
+    console.log(`hello ${name}, your score is ${score}`);
+}
+
+//setTimeout(showScore, 1000, 'john', 34);
+
+const firstID = setTimeout(showScore, 1000, 'john', 34);
+const secondID = setTimeout(showScore, 1000, 'peter', 88);
+
+console.log(firstID);
+console.log(secondID);
+
+// stops the firstID from running
+clearTimeout(firstID);
 
 // --------------------------------------
