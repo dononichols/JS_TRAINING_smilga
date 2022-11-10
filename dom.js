@@ -854,7 +854,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener...
 
-*/
+
 
 window.addEventListener('DOMContentLoaded', function () {
     const heading = document.querySelector('h1');
@@ -863,4 +863,20 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log('hello');
 });
 
+*/
 // -------------------------------------
+//vid.124
+
+// -- Events - "load"
+
+/*
+
+The load event is fired when the whole page has loaded, including all dependent resources such as stylesheets and images. This is in contrast to DOMContentLoaded, which is fired as soon as the page DOM has been loaded, without waiting for resources to finish loading.
+
+window.addEventListener('load', function () {
+    // your code goes here
+});
+
+**** Look into more....
+*/
+// -----------------------------------
